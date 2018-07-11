@@ -1,0 +1,14 @@
+{
+  "name": "botname",
+  "version": "1.0.0",
+  "description": "A tutorial bot for TSC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "your_name",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
