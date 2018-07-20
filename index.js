@@ -6,14 +6,14 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
 
-  bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});
+  bot.user.setActivity("created by Levi", {type: "PLAYING"});
 
   //bot.user.setGame("on SourceCade!");
 });
 
 bot.on("message", async message => {
   if(message.author.bot) return;
-  if(message.channel.type === "dm") return;
+  if(message.channel.type === "dm") return message.channel.send("datgayshit");
 
   let prefix = botconfig.prefix;
   let messageArray = message.content.split(" ");
@@ -31,7 +31,7 @@ bot.on("message", async message => {
     if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
 
     let kickEmbed = new Discord.RichEmbed()
-    .setDescription("~Kick~")
+    .setDescription("KICK ooooooooooOOOOO")
     .setColor("#e56b00")
     .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
     .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
